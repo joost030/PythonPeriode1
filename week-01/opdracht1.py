@@ -1,36 +1,49 @@
 # Oefening 1
 # Print de volgende zin "Hello World"
 
-print()
+print("Hello world")
 
 
 # Oefening 2
 # Verander de waarde van de onderstaande variabelen.
 # Print deze daarna 1 voor 1 uit
 
-naam = ""
-leeftijd = 0
-woonstad = ""
-
+naam = "Adam"
+leeftijd = 17
+woonstad = "Lopik"
+print(f"{naam}, {woonstad}, {leeftijd}")
+     
 
 # Oefening 3
 # Gebruik nu bovenstaande variabelen om zinnen te bouwen
 # Bijvoorbeeld print("Hallo mijn naam is ", naam) of print(f"Mijn naam is {naam}")
-
+print(f"Hallo mijn naam is {naam}")
 
 
 # Oefening 4
 # Maak variabelen aan voor je favoriete game, hoe veel uur je deze hebt gespeeld en welk cijfer je dit spel zou geven
 # Print deze daarna in zinnen uit, bijvoorbeeld "Mijn favoriete game is Minecraft" "Ik heb deze game 150 uur gespeeld", "Ik geef deze game een 8.5"
 
+aantal1 = 90
+aantal2 = 9
 
+print("Mijn lievelingsspel is Dead by daylight")
+print(f"ik heb deze game {aantal1} uur gespeeld")
+print(f"ik geef het een {aantal2}")
 
 # Oefening 5
 # Maak twee variabelen aan, number1 en number2
 # Bereken daarna de som (+), het verschil (-) en het product (*) uit van deze nummers.
 # Print daarna de uitkomsten uit
 
+number1 = 97
+number2 = 50
 
+som = number1 + number2
+verschil = number1 - number2
+product = number1 * number2
+
+print(f"{som}, {verschil}, {product}")
 
 # Oefening 6
 # Maak een simpel game character met minimaal de volgende variabelen: name, health, level, damage
