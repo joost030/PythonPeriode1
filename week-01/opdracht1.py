@@ -49,19 +49,44 @@ print(f"{som}, {verschil}, {product}")
 # Maak een simpel game character met minimaal de volgende variabelen: name, health, level, damage
 # Print deze vervolgens uit
 # Zorg er daarna voor dat je character 20 damage neemt, print nu de nieuwe waarde van zijn health uit
+naam = "Adam"
+health = 100
+level = 10
+damage = 10 
 
-
-
+print("Naam", naam)
+print("Health", health)
+print("Level", level)
+print("Damage", damage)
 # Oefening 7
 # Ga verder met je character van de vorige oefening. Voeg nu een nieuw variabel "weapon" toe.
 # Geef het wapen een naam, verhoog de damage van je character en verhoog het level met 1
 # Print daarna de nieuwe waardes uit 
 
+level = 5
+damage = 20
 
+wapen = "Greatsword"
 
+damage += 10
+level += 1
+
+print("level", level)
+print("damage", damage)
+print("wapen", wapen)
 # Oefening 8
 # Maak een programma dat een profiel van een gamer laat zien
 # Maak minimaal de volgende variabelen: name, age, favouriteGame, hoursPlayed, level, score
 # Print al deze informatie netjes uit
 # Verhoog daarna de score van het profiel met 250 en print de nieuwe waarde
 # Bonus! Voeg zelf 3 nieuwe variabelen toe
+naam =  "Adam"
+leeftijd =  17
+favouritegame = "Dead by Daylight"
+hoursplayed = 680 
+level = 98 
+print ( "naam", naam)
+print("leeftijd", leeftijd)
+print("favouritegame",favouritegame)
+print("uren gespeeld", hoursplayed)
+print("Level", level)
