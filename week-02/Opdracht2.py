@@ -2,7 +2,6 @@
 #
 # Maak een variabele genaamd age.
 # Geef deze variabele een leeftijd.
-#
 # Controleer met een if-statement:
 # - Is de leeftijd 18 of hoger?
 #   Print dan: "Je bent volwassen."
@@ -11,7 +10,11 @@
 #   Print dan: "Je bent nog geen 18."
 #
 # Test je programma daarna met verschillende waardes voor age.
-
+age = 20
+if age >= 18:
+    print("Je bent volwassen.")
+else:
+    print("Je bent nog geen 18.")
 
 
 # Opdracht 2 - Voldoende of onvoldoende
@@ -28,7 +31,12 @@
 #   Print: "Je hebt een onvoldoende."
 #
 # Test je programma met verschillende cijfers.
-
+grade = 6.2
+ 
+if grade >= 5.5:
+    print("Je hebt een voldoende!")
+else:
+    print("Je hebt een onvoldoende.")
 
 
 # Opdracht 3 - Cijfer beoordelen
@@ -47,10 +55,14 @@
 #   Print "Onvoldoende."
 #
 # Test je code met bijvoorbeeld:
-# 4
-# 6
-# 9
-
+grade = 9
+ 
+if grade >= 8:
+    print("Goed gedaan!")
+elif grade >= 5.5:
+    print("Voldoende!")
+else:
+    print("Onvoldoende.")
 
 
 # Opdracht 4 - Game Character
@@ -72,7 +84,16 @@
 #
 # Als dit zo is:
 # Print "Je hebt een schild!"
-
+health = 75
+has_shield = True
+ 
+if health >= 50:
+    print("Je hebt genoeg health.")
+else:
+    print("Je hebt weinig health!")
+ 
+if has_shield:  # hetzelfde als: if has_shield == True
+    print("Je hebt een schild!")
 
 
 # Opdracht 5 - Mag je naar binnen?
@@ -96,7 +117,13 @@
 # Print "Je mag niet naar binnen."
 #
 # Test daarna wat er gebeurt als je de waardes verandert.
-
+age = 20
+has_ticket = True
+ 
+if age >= 18 and has_ticket:
+    print("Je mag naar binnen!")
+else:
+    print("Je mag niet naar binnen.")
 
 
 # Opdracht 6 - Tellen
@@ -113,7 +140,8 @@
 # 10
 #
 # Gebruik hiervoor range().
-
+for number in range(1, 11):  
+    print(number)
 
 
 # Opdracht 7 - Tafel van 5
@@ -131,7 +159,8 @@
 # Gebruik de variabele uit je for-loop
 # om de berekening te maken.
 
-
+for i in range(1, 11):
+    print(f"{i} x 5 = {i * 5}")
 
 # Opdracht 8 - Countdown
 #
@@ -157,7 +186,13 @@
 # 2
 # 1
 # GO!
-
+countdown = 10
+ 
+while countdown > 0:
+    print(countdown)
+    countdown -= 1  
+ 
+print("GO!")
 
 
 # Opdracht 9 - Health verliezen
@@ -180,7 +215,11 @@
 # Health: 20
 # Health: 0
 
-
+health = 100
+ 
+for i in range(5):
+    health -= 20
+    print(f"Health: {health}")
 
 # Opdracht 10 - Even of oneven
 #
@@ -204,7 +243,11 @@
 # Bijvoorbeeld:
 # 4 % 2 == 0
 
-
+for number in range(1, 11):
+    if number % 2 == 0:
+        print(f"{number} is even")
+    else:
+        print(f"{number} is oneven")
 
 # Opdracht 11 - Vijanden verslaan - BONUS
 #
