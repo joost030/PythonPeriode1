@@ -1,7 +1,10 @@
 # Oefening 1
 # Maak een list aan genaamd books met minimaal 5 boeken
 # Gebruik daarna een for-loop om ieder boek 1 voor 1 uit te printen
+books = ["Harry Potter", "Het leven van een loser 1", "Oorlog zonder vrienden", "Koning van katoren", "Het Achterhuis"]
 
+for book in books:
+    print(book)
 
 
 
@@ -11,7 +14,10 @@
 # Gebruik een for-loop om door de list heen te gaan
 # Print bij iedere game de zin: "Ik speel graag ..."
 # Bijvoorbeeld: "Ik speel graag Minecraft"
+games = ["Minecraft", "FIFA", "Fortnite", "Mario Kart", "Rocket League"]
 
+for game in games:
+    print("Ik speel graag " + game)
 
 
 
@@ -21,7 +27,12 @@
 # 10, 25, 40, 15, 30
 # Gebruik een for-loop om iedere score uit te printen
 # Tel bij iedere score 10 punten op en print daarna de nieuwe score uit
+scores = [10, 25, 40, 15, 30]
 
+for score in scores:
+    print("Score:", score)
+    newScore = score + 10
+    print("Nieuwe score:", newScore)
 
 
 
@@ -29,7 +40,8 @@
 # Oefening 4
 # Gebruik een for-loop met range() om de getallen 1 tot en met 10 uit te printen
 # Zorg ervoor dat zowel 1 als 10 geprint worden
-
+for number in range(1, 11):
+    print(number) 
 
 
 
@@ -41,6 +53,9 @@
 # 2 x 5 = 10
 # 3 x 5 = 15
 # Ga door tot en met 10 x 5
+for i in range(1, 11):
+    print(i, "x 5 =", i * 5)
+countdown = 10
 
 
 
@@ -54,7 +69,11 @@
 
 countdown = 10
 
+while countdown > 0:
+    print(countdown)
+    countdown = countdown - 1
 
+print("START!")
 
 
 
@@ -70,7 +89,11 @@ countdown = 10
 monsterHealth = 100
 damage = 20
 
+while monsterHealth > 0:
+    monsterHealth = monsterHealth - damage
+    print("Monster health:", monsterHealth)
 
+print("Monster verslagen!")
 
 
 
@@ -81,4 +104,13 @@ damage = 20
 # Gebruik daarna binnen de loop een if-statement
 # Als het item "Potion" is, print dan "Deze potion geeft health terug"
 # Als het item "Key" is, print dan "Met deze key kun je een deur openen"
-# Bonus! Maak een variabel itemCount aan en tel hoeveel items er in de inventory zitten
+# Bonus! Maak een variabel itemCount aan en tel hoeveel items er in de inventory zitteninventory = ["Sword", "Potion", "Shield", "Bow", "Key"]
+
+inventory = ["Sword", "Potion", "Shield", "Bow", "Key"]
+
+for item in inventory:
+    print(item)
+    if item == "Potion":
+        print("Deze potion geeft health terug")
+    elif item == "Key":
+        print("Met deze key kun je een deur openen")
